@@ -17,12 +17,12 @@
     }
     , "dependencies": {
           "ee-class"                : "1.x"
-        , "ee-types"                : "1.x"
-        , "ee-log"                  : "0.3.x"
+        , "ee-types"                : "^2.1.2"
+        , "ee-log"                  : "~2.0.2"
         , "async-method"            : "0.1.x"
     }
     , "devDependencies": {
-          "mocha"                   : "1.17.x"
+          "mocha"                   : "~3.3.0"
     }
     , "optionalDependencies": {}
     , "keywords"                    : ["face-detection"]

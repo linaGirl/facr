@@ -1,5 +1,7 @@
 # facr
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/facr.svg)](https://greenkeeper.io/)
+
 Detects faces in images and returns a focal point. Is used to crop the right part of an image. You should use this in conjunction with the ee-image-worker package which has support for cropping using focal points.
 
 
