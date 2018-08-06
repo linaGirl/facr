@@ -24,12 +24,11 @@ You have first to install native dependecies
 
 
     // create an instacne
-    var detector =  new FaceDetection();
+    var detector = new FaceDetection();
 
 
     // get focal point for an image
-    detector.detect(imageBuffer, function(err, focalPoint) {
-        if (err) log('#Fail :(');
-        else if (focalPoint) log('Yeah, we got it! x %s, y %s :)', focalPoint.x, focalPoint.y);
-        else log('sorry, failed to detect any faces in this image ...'');
-    });
+    const focalPoint = await detector.detect(imageBuffer);
+
+    if (focalPoint) console.log('Yeah, we got it! x %s, y %s :)', focalPoint.x, focalPoint.y);
+    else console.log('sorry, failed to detect any faces in this image ...'');
