@@ -17,7 +17,7 @@ You have first to install native dependecies
 ##### ubuntu linux
 
 ```
-sudo apt-get install python python-opencv libopencv-dev -y
+apt -y install python python3-opencv libopencv-dev python3-numpy
 ```
 
 ## API
