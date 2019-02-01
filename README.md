@@ -14,9 +14,7 @@ The Python script bin/detect is licenced unter the GPL2 Licence. The file was co
 
 You have first to install native dependecies
 
-##### ubuntu linux 18.04
-
-opencv 3.x
+##### ubuntu linux
 
 ```
 sudo apt-get install python python-opencv libopencv-dev -y
