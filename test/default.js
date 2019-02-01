@@ -26,8 +26,8 @@
 
             facr.detect(data).then(function(focalPoint) {
                 assert(focalPoint);
-                assert(focalPoint.x === 1703);
-                assert(focalPoint.y === 1006);
+                assert(focalPoint.x === 2152);
+                assert(focalPoint.y === 590);
                 done();
             }).catch(done);
         }); 
