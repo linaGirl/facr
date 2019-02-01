@@ -107,11 +107,11 @@ def __main__():
     side = math.sqrt(im.size)
     minlen = int(side / 20)
     maxlen = int(side / 2)
-    flags = cv2.cv.CV_HAAR_DO_CANNY_PRUNING
+    flags = cv2.CV_HAAR_DO_CANNY_PRUNING
 
     # optimize queries when possible
     if args.biggest or args.query:
-        flags |= cv2.cv.CV_HAAR_FIND_BIGGEST_OBJECT
+        flags |= cv2.CV_HAAR_FIND_BIGGEST_OBJECT
 
     # frontal faces
     cc = cv2.CascadeClassifier(PROFILES['HAAR_FRONTALFACE_ALT2'])
@@ -128,8 +128,8 @@ def __main__():
     # debug features
     if args.output:
         im = cv2.imread(args.file)
-        font = cv2.cv.InitFont(cv2.cv.CV_FONT_HERSHEY_SIMPLEX, 0.5, 0.5, 0, 1, cv2.cv.CV_AA)
-        fontHeight = cv2.cv.GetTextSize("", font)[0][1] + 5
+        font = cv2.InitFont(cv2.CV_FONT_HERSHEY_SIMPLEX, 0.5, 0.5, 0, 1, cv2.CV_AA)
+        fontHeight = cv2.GetTextSize("", font)[0][1] + 5
 
         for i in range(len(features)):
             if best is not None and i != best and not args.debug:
@@ -149,7 +149,7 @@ def __main__():
                     lines.append("{}: {}".format(k, v))
                 h = rect[1] + rect[3] + fontHeight
                 for line in lines:
-                    cv2.cv.PutText(cv2.cv.fromarray(im), line, (rect[0], h), font, fg)
+                    cv2.PutText(cv2.fromarray(im), line, (rect[0], h), font, fg)
                     h += fontHeight
 
         cv2.imwrite(args.output, im)
