@@ -34,7 +34,7 @@ if 'cv' in dir(cv2):
 
 
 # Profiles
-DATA_DIR = '/usr/share/opencv/'
+DATA_DIR = '/usr/share/opencv4/'
 CASCADES = {}
 
 PROFILES = {
