@@ -1,7 +1,7 @@
 {
     "name": "facr",
     "description": "Detects faces in images and returns a focal point",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "homepage": "https://github.com/eventEmitter/facr",
     "author": "Michael van der Weg <michael@joinbox.com> (http://joinbox.com/)",
     "license": "MIT",
